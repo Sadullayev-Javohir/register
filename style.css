@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 40px 100px;
+}
+
+.form-half {
+    -webkit-box-shadow: 6px 10px 29px -14px rgba(0,0,0,0.74);
+    -moz-box-shadow: 6px 10px 29px -14px rgba(0,0,0,0.74);
+    box-shadow: 6px 10px 29px -14px rgba(0,0,0,0.74);
+    overflow: hidden;
+}
+
+.form-left {
+    float: left;
+    width: 50%;
+    background: url(./image.png);
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-left .logo {
+    width: auto;
+    margin: 15px 15px;
+}
+
+.sign_up {
+    padding: 170px 50px;
+}
+
+.sign_up button {
+    display: block;
+    background: #ffffff;
+    color: #707070;
+    font-family: sans-serif;
+    font-weight: 600;
+    border: none;
+    padding: 10px 15px;
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-box-shadow: 6px 10px 29px -14px rgba(0,0,0,0.74);
+    -moz-box-shadow: 6px 10px 29px -14px rgba(0,0,0,0.74);
+    box-shadow: 6px 10px 29px -14px rgba(0,0,0,0.74);
+    border: 1px solid #ffffff;
+    transition: .5s;
+}
+
+.sign_up button:hover {
+    background-color: #999797;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.sign_up button i {
+    color: #03A9F4;
+    font-size: 20px;
+}
+
+.form-right {
+    float: right;
+    width: 50%;
+}
+
+form {
+    padding: 80px 0;
+    max-width: 60%;
+    margin: auto;
+}
+
+.form-right h1 {
+    font-size: 40px;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+}
+
+.form-right h6 {
+    color: #777777;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+.form-right .col-25 {
+    margin: 20px 0;
+}
+
+.form-right .col-25 input {
+    border: 1px solid #CACACA;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px;
+    outline: none;
+    -webkit-box-shadow: 6px 10px 29px -14px rgba(0,0,0,0.74);
+    -moz-box-shadow: 6px 10px 29px -14px rgba(0,0,0,0.74);
+    box-shadow: 6px 10px 29px -14px rgba(0,0,0,0.74);
+
+}
+
+.form-right .col-25 label {
+    margin: 10px;
+    color: #777777;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-right .col-25 .text {
+    display: flex;
+    margin: 20px 0;
+}
+
+.form-right .col-25 .text input {
+    display: inline;
+    width: auto;
+    cursor: pointer;
+}
+
+.form-right .col-25 .text p {
+    color: #ababab;
+    font-size: 15px;
+}
+
+.form-right .col-25 input[type="button"] {
+    background-color: #03A9F4;
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.form-right .col-25 input[type="button"]:hover {
+    background-color: white;
+    color: #03A9F4;
+}
+
+@media(max-width: 1100px) {
+    .container {
+        margin: 40px 50px;
+    }
+    form {
+        max-width: 90%;
+    }
+    .sign_up {
+        padding: 170px 10px;
+    }
+    .sign_up button {
+        width: 100%;
+    }
+}
+
+@media(max-width: 850px) {
+    .form-left, .form-right {
+        width: 100%;
+    }
+    form {
+        max-width: 70%;
+    }
+    .sign_up {
+        padding: 170px 10px;
+    }
+    .sign_up button {
+        width: 70%;
+    }
+}
+
+@media(max-width: 600px) {
+    form {
+        max-width: 90%;
+    }
+    .sign_up {
+        padding: 170px 10px;
+    }
+    .sign_up button {
+        width: 90%;
+    }
+    .form-right h1 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 500px) {
+    .container {
+        margin: 20px 20px;
+    }
+}
